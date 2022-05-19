@@ -1,0 +1,271 @@
+@font-face{
+    font-family: "notehand-light";
+    src: url("../fonts/NOTEHN.TTF");
+}
+@font-face{
+    font-family: "notehand-bold";
+    src: url("../fonts/NOTEHNBI.TTF");
+}
+@font-face{
+    font-family: "hollywood";
+    src: url("../fonts/HOLLYWD.TTF");
+}
+@font-face{
+    font-family: "forte";
+    src: url("../fonts/FORTE.TTF");
+}
+
+
+/* General class */
+.border-orange{
+    border-bottom: 2px solid #ff6e05;
+}
+.active{
+    background-color: #ff6e05 !important;
+}
+.custom-btn-orange{
+    background-color:#ff6e05 ;
+    font-family: "forte";
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: 100;
+    padding: 0 5px;
+    border-radius: 0;
+    cursor: pointer ;
+}
+input{
+    border-color: #000;
+}
+.facebook{
+ color: #166bf3;
+}
+.google{
+    color: #c70202;
+}
+.pintrest{
+    color: #dc143c;
+}
+.instagram{
+    color: #e718ee;
+}
+.twitter{
+    color: #01b5f2;
+}
+.google-hover:hover{
+    background-color: #dc143c;
+    color: #FFF!important;
+}
+.facebook-hover:hover{
+    background-color: #166bf3;
+    color: #FFF !important;
+}
+
+
+/* end General class */
+
+/* navbar */
+#main-nav{
+    height: 100px;
+}
+
+nav{
+    justify-content: center;
+    height: 102%; 
+}
+nav .nav-tabs{
+    border: none;
+}
+.navbar-brand h1,h5{
+    text-align: center;
+    color: #000;
+    margin: 0;
+}
+.navbar-brand h1{
+    font-family: "hollywood";
+    font-size: 3rem;
+}
+.navbar-brand h5{
+    font-family: "notehand-bold";
+    font-size: 2rem;
+}
+
+.nav-item .nav-link{
+    height: 100%;
+    display: flex;
+    padding: 0 10px;
+    padding-top: 20px;
+    font-weight: bold;
+    align-items: center;
+    border-radius: 0!important;
+    color: #ff6e05;
+}
+.login{
+   top: 0;
+   right: 1rem; 
+}
+.login a{
+    color: #000;
+}
+.login a:hover{
+    color: #ff6e05;
+}
+@media all and (max-width: 550px) {
+    #main-nav{
+        height: 90px;
+        margin-bottom: 90px;
+    }
+    .navbar-brand h1{
+        font-size: 1.5rem;
+    }
+    .navbar-brand h5{
+        font-size: 0.6rem;
+    }
+    
+    nav .nav-item .nav-link{
+        height: 100%;
+        display: flex;
+        font-size: 0.5rem;
+        padding: 5px;
+        padding-top: 20px;
+        align-items: center;
+        border-radius: 0!important;
+        color: #ff6e05;
+    }
+    .login{
+        top: 0;
+        right:0; 
+        padding: 0;
+        margin: 0;
+     } 
+     .login a{
+        color: #000;
+        font-size: 0.5rem;
+    }
+
+    .search-bar-title h3{
+        font-size: 1.5rem !important;
+    }
+    input{
+        font-size: 5px !important;
+    }
+    .custom-btn-orange{
+        font-size: 1rem;
+    }
+}
+
+/* end nav */
+
+/* search bar */
+#search-bar{
+    margin-top: 100px!important;
+}
+.cover-img{
+    
+    background-image: url("../image/2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 250px;
+    z-index: -1;
+}
+form .input-group #search{
+    width: 50%;
+}
+form{
+    background-color: #ffffff7a !important;
+    padding: 5px !important;
+    border-radius: 0 !important;
+}
+.search-bar-title{
+    padding-left: 50px;
+}
+.search-bar-title h3{
+    text-align: center;
+    font-weight: 100;
+    font-family: "forte";
+    font-size: 2.5rem;
+}
+@media (min-width: 550px) and (max-width: 991px){
+    #search-bar{
+      margin-top: 170px !important;
+    }
+    .search-bar-title h3{
+        font-size: 2rem !important;
+        margin-top: 30px;
+    }
+}
+/* end search bar */
+
+/* social network menu */
+.social-container{
+    z-index: 1000;
+    width: 35px;
+    top: 50%;
+    left: 0;
+    height: 180px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.643);
+}
+#social-list li a{
+    color: crimson;
+    font-size: 1.3rem;
+    
+    
+}
+#social-list li {
+    margin: 10px 0;
+
+    
+}
+
+/* end social network menu */
+
+/* city */
+.city{
+    
+    padding: 0 5px;
+    padding-bottom: 10px;
+    
+}
+.custom-city-card {
+    position: relative;
+    height: auto;
+    
+}
+
+.custom-city-card img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.cover-title{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    width: 80%;
+    height: 25%;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+    background-color: #ff6d059f;
+}
+
+.custom-city-card:hover .cover-title{
+    transform: scaleX(1);
+    transition-duration: 0.5s ease-in;
+}
+.title-container a h3{
+    font-family: "hollywood";
+    color: #fbfbfba6;
+    font-size: 3rem;
+    TEXT-ALIGN: CENTER;
+}
+
+.custom-city-card .title-container{
+    position: absolute;
+    align-content: center;
+    top: 40%;
+    left: 0;
+    width: 100%;
+}
+
+/* end city */

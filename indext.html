@@ -1,0 +1,273 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>World Travel</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <!-- navbar -->
+    <div class="container-fluid d-block">
+        <div class="row fixed-top" id="main-nav">
+            <div class="col-12 col-lg-5 bg-light  float-lg-start order-1 order-lg-first border-orange">
+                <a href="#" class="navbar-brand">
+                    <h1>TRAVEL AGENCY</h1>
+                    <h5>The 1th online travel agency</h5>
+                </a>
+            </div>
+            <div class="col-12 col-lg-7 bg-light float-lg-end order-0 order-lg-last border-orange">
+                <nav class="nav navbar-dark bg-light  ">
+                    <ul class="nav nav-tabs nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link rounded-0 active" href="" data-bs-togg="tab">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="" data-bs-toggle="tab">REGISTER</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="" data-bs-toggle="tab">HELP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="" data-bs-toggle="tab">YOUR TRAVEL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="" data-bs-toggle="tab">SPECIALS</a>
+                        </li>
+                        
+                    </ul>
+                    <ul class="login position-fixed mr-auto">
+                        <li class="list-inline-item ">
+                            <a class="nav-link text-decoration-none" href="#login-modal" data-bs-toggle="modal" >Login</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!--end navbar  -->
+<!-- social network menu -->
+    <div class="container d-none d-lg-block">
+        <div class="row position-fixed">
+            <div class="social-container position-fixed rounded-end">
+                <ul class="list-unstyled position-absolute " id="social-list">
+                    <li><a href=""><i class="bi bi-google google"></i></a></li>
+                    <li><a href=""><i class="bi bi-twitter twitter"></i></a></li>
+                    <li><a href=""><i class="bi bi-instagram instagram"></i></a></li>
+                    <li><a href=""><i class="bi bi-pinterest pinterest"></i></a></li>
+                    <li><a href=""><i class="bi bi-facebook facebook"></i></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+<!-- end social network menu -->
+
+
+
+<!-- login and signup modals -->
+    
+    <div class="cotainer">
+        <div class="row">
+            <!-- login modal -->
+            <div class="modal fade"  id="login-modal">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content rounded">
+                        <div class="modal-header p-3 pb-2">
+                            <h3 class="">Login</h3>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="">
+                                <div class="form-floating mb-2">
+                                    <input class="form-control rounded-4" type="email" required id="emailInput" placeholder="name@example.com">
+                                    <label for="emailInput">Email Address</label>
+                                </div>
+                                <div class="form-floating mb-2">
+                                    <input class="form-control rounded-4" type="password" required id="passInput" placeholder="Password">
+                                    <label for="passInput">Password</label>
+                                </div>
+                                <button type="submit" class="w-100 btn btn-danger active mb-2 btn-lg rounded-4">Login</button>
+                                <small class="text-muted">By clicking login, you agree to the term of use</small>
+                                <hr class="my-4">
+                                <h2 class="fs-6 fw-bold mb-2">Newcomer? Register now!</h2>
+                                <button type="button" class="w-100 btn btn-success mb-2 rounded-4" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#signupModal">Sign up</button>
+                                <h2 class="fs-6 fw-bold mb-2">Or use a Third-Party</h2>
+                                <button type="button" class="w-100 facebook btn btn-outline-dark facebook-hover mb-2 rounded-4 ">
+                                    <i class="bi bi-facebook "></i>
+                                    <span class="px-4">Sign up with facebook</span>
+                                </button>
+                                <button class="w-100 btn btn-outline-dark google-hover google mb-2 rounded-4 " type="button">
+                                    <i class="bi bi-google"></i>
+                                    <span class="px-4">Sign up with google</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end login modal -->
+            <!-- sign up modal -->
+            <div class="modal fade" id="signupModal" >
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header p-3 pb-2">
+                            <h2>Registeration form</h2>
+                            <button class="btn-close" type="button" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#login-modal" ></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="">
+                                <div class="form-floating mb-1">
+                                    <input type="text" class="form-control rounded-4" id="inputName" placeholder="username">
+                                    <label for="inputName">User name</label>
+                                </div>
+                                <div class="form-floating mb-1">
+                                    <input type="email" class="form-control rounded-4" id="inputEmail" placeholder="name@example.com">
+                                    <label for="inputEmail">Email Address</label>
+                                </div>
+                                <div class="form-floating mb-1">
+                                    <input type="password" class="form-control rounded-4" id="inputPass" placeholder="Password">
+                                    <label for="inputPass">Password</label>
+                                </div>
+                                <div class="form-floating mb-1">
+                                    <input type="password" class="form-control rounded-4"id="inputRePass"placeholder="Repeat Password">
+                                    <label for="inputRePass">Repeat Password</label>
+                                </div>
+                                <button type="submit" class="btn btn-success w-100">Sign up</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--end  sign up modal -->
+        </div>
+    </div>
+    
+    
+
+<!-- end login and sign up modals -->
+    <!-- search bar -->
+    <div class="container-fluid">
+        <div class="row cover-img align-content-center mb-3 justify-content-center" id="search-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12  col-lg-3  mb-xl-0 search-bar-title">
+                        <h3>let us show you the world!</h3>
+                    </div>
+                
+                    <div class="col-12 col-lg-8 mt-4">
+                        <form action="" class="form-control mb-1">
+                            <div class="input-group">
+                                <input type="text" id="search" class="form-control" placeholder="search by distination">
+                                <input type="text" class="form-control" placeholder="check in">
+                                <input type="text" class="form-control" placeholder="check out">
+                            </div>
+                        </form>
+                        <button type="button" class="btn custom-btn-orange float-end">search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end search bar -->
+    <div class="container">
+        <div class="row mt-4 ">
+            <div class="col-md-4 col-lg-3 city" >
+                <div class="custom-city-card">
+                    <img src="image/city/1.jpg" class="w-100" alt="">
+                    <div class="cover-title"></div>
+                    <div class="title-container">
+                        <a href="" class="text-decoration-none">
+                            <h3>LONDON</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 city" >
+                <div class="custom-city-card">
+                    <img src="image/city/2.jpg" class="w-100" alt="">
+                    <div class="cover-title"></div>
+                    <div class="title-container">
+                        <a href="" class="text-decoration-none">
+                            <h3>ROME</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 city" >
+                <div class="custom-city-card">
+                    <img src="image/city/3.jpg" class="w-100" alt="">
+                    <div class="cover-title"></div>
+                    <div class="title-container">
+                        <a href="" class="text-decoration-none">
+                            <h3>Instanbul</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 city" >
+                <div class="custom-city-card">
+                    <img src="image/city/4.jpg" class="w-100" alt="">
+                    <div class="cover-title"></div>
+                    <div class="title-container">
+                        <a href="" class="text-decoration-none">
+                            <h3>TEHRAN</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 city" >
+                <div class="custom-city-card">
+                    <img src="image/city/5.jpg" class="w-100" alt="">
+                    <div class="cover-title"></div>
+                    <div class="title-container">
+                        <a href="" class="text-decoration-none">
+                            <h3>CAIRO</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 city" >
+                <div class="custom-city-card">
+                    <img src="image/city/6.jpg" class="w-100" alt="">
+                    <div class="cover-title"></div>
+                    <div class="title-container">
+                        <a href="" class="text-decoration-none">
+                            <h3>MOSCOW</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 city" >
+                <div class="custom-city-card">
+                    <img src="image/city/7.jpg" class="w-100" alt="">
+                    <div class="cover-title"></div>
+                    <div class="title-container">
+                        <a href="" class="text-decoration-none">
+                            <h3>KABUL</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 city" >
+                <div class="custom-city-card">
+                    <img src="image/city/8.jpg" class="w-100" alt="">
+                    <div class="cover-title"></div>
+                    <div class="title-container">
+                        <a href="" class="text-decoration-none">
+                            <h3>NEWYORK</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
