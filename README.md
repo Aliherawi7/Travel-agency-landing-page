@@ -1,4 +1,4 @@
-![page preview](image/preview.JPG)
+![page preview](image/preview.jpg)
 # features
 * Full Responsive
 * css effects
